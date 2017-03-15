@@ -50,7 +50,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         do{
             let csv = try CSV(contentsOfURL: PATH)
             let rows = csv.rows
-            print(rows)
+            //print(rows)
             for row in rows{
                 let pokeid = Int(row["id"]!)!
                 let name = row["identifier"]!
